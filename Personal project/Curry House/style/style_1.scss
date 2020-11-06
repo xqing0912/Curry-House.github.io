@@ -1,0 +1,228 @@
+@import '_keyframes_1.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+
+    .outside-box {
+        position: relative;
+        width: 100%;
+        // background-color: #333;
+        color: #eee;
+
+        .nav_button {
+            overflow: hidden;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            position: fixed;
+            right: -0.42em;
+            top: 50px;
+            //  background-color: #333;
+            border-radius: 10px 0 0 10px;
+            background-image: url("../image/img/menu_icon.jpg");
+            background-position: center;
+            background-size: cover;
+            z-index: 1;
+        }
+
+
+        .nav_bar {
+            width: 20%;
+            height: 100%;
+            background-color: black;
+            position: absolute;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 2;
+            padding: 10px;
+            display: none;
+
+            .top {
+                display: flex;
+                align-items: center;
+                margin: 10% 0 0 10%;
+
+                .logo {
+                    .logo-img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+
+                .shop_name {
+                    margin-left: 1.8em;
+
+                    p {
+                        margin-bottom: 0;
+                        font-weight: bolder;
+                    }
+                }
+
+                .button-close {
+                    position: absolute;
+                    right: 2%;
+                    top: 2%;
+
+                    .close {
+                        font-size: 4.5rem;
+                        color: #eee;
+                    }
+
+                    :focus {
+                        outline-style: unset;
+                    }
+                }
+            }
+
+            .nav-menu {
+                list-style: none;
+                margin: 15% 0 0 1%;
+                line-height: 2.7em;
+                font-size: 1.5em;
+                font-weight: bold;
+
+                .a-style {
+                    text-decoration: none;
+                    line-height: 2.5em;
+                    color: #eee;
+                }
+
+                .hvr-underline-from-center:before {
+                    background: #eee;
+                    height: .1em;
+                }
+            }
+        }
+
+        .animate__fadeInRightBig {}
+
+        .animate__fadeOutRightBig {}
+
+        .container {
+            min-width: 1140px;
+        }
+
+        .banner-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .logo-text {
+                position: absolute;
+                top: 19em;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .banner-logo-Img {
+                    overflow: hidden;
+                    border-radius: 50%;
+                }
+                .logo-p-text{
+                    margin-top: 0.5em;
+                    p{
+                        font-size: 2.3rem;
+                        font-weight: bold;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .banner {
+            overflow: hidden;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            // background-color: rgb(201, 190, 182);
+            height: 968px;
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            ;
+            // z-index: 10;
+
+            .banner-img {
+                // z-index: 2;
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 0;
+                left: 0;
+                animation: banner-animation 20s 0s infinite;
+            }
+
+            :nth-child(1) {
+                background-image: url("../image/img/img-L/1.jpg");
+                animation-delay: 0s;
+            }
+
+            :nth-child(2) {
+                background-image: url("https://images.unsplash.com/photo-1528738064262-9f834cbdfda1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+                animation-delay: 4s;
+
+            }
+
+            :nth-child(3) {
+                background-image: url("https://images.unsplash.com/photo-1533622447723-ddb6468ad2df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=976&q=80");
+                animation-delay: 8s;
+            }
+
+            :nth-child(4) {
+                background-image: url("../image/img/img-L/4.jpg");
+                animation-delay: 12s;
+            }
+
+            :nth-child(5) {
+                background-image: url("https://images.unsplash.com/photo-1596560314766-08c0c6890024?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+                animation-delay: 16s;
+            }
+        }
+
+        .features {
+            height: 627px;
+            clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 65%);
+            // background-color: rgb(235, 189, 155);
+            // position: relative;
+            top: -146px;
+            // z-index: 9;
+        }
+
+        .menu {
+            height: 2246px;
+        }
+
+        .environment {
+            height: 1437px;
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+            background-color: #eee;
+
+        }
+
+        .shop {
+            height: 1165px;
+
+        }
+
+        .news {
+            height: 1812px;
+            clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 90%);
+            background-color: #eee;
+        }
+
+        .contact {
+            height: 1296px;
+
+        }
+    }
+}

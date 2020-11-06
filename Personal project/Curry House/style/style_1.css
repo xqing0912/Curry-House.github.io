@@ -1,0 +1,279 @@
+@-webkit-keyframes banner-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes banner-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body .outside-box {
+  position: relative;
+  width: 100%;
+  color: #eee;
+}
+
+body .outside-box .nav_button {
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  position: fixed;
+  right: -0.42em;
+  top: 50px;
+  border-radius: 10px 0 0 10px;
+  background-image: url("../image/img/menu_icon.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+
+body .outside-box .nav_bar {
+  width: 20%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 10px;
+  display: none;
+}
+
+body .outside-box .nav_bar .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10% 0 0 10%;
+}
+
+body .outside-box .nav_bar .top .logo .logo-img {
+  width: 60px;
+  height: 60px;
+}
+
+body .outside-box .nav_bar .top .shop_name {
+  margin-left: 1.8em;
+}
+
+body .outside-box .nav_bar .top .shop_name p {
+  margin-bottom: 0;
+  font-weight: bolder;
+}
+
+body .outside-box .nav_bar .top .button-close {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+}
+
+body .outside-box .nav_bar .top .button-close .close {
+  font-size: 4.5rem;
+  color: #eee;
+}
+
+body .outside-box .nav_bar .top .button-close :focus {
+  outline-style: unset;
+}
+
+body .outside-box .nav_bar .nav-menu {
+  list-style: none;
+  margin: 15% 0 0 1%;
+  line-height: 2.7em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+body .outside-box .nav_bar .nav-menu .a-style {
+  text-decoration: none;
+  line-height: 2.5em;
+  color: #eee;
+}
+
+body .outside-box .nav_bar .nav-menu .hvr-underline-from-center:before {
+  background: #eee;
+  height: .1em;
+}
+
+body .outside-box .container {
+  min-width: 1140px;
+}
+
+body .outside-box .banner-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .outside-box .banner-logo .logo-text {
+  position: absolute;
+  top: 19em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .outside-box .banner-logo .logo-text .banner-logo-Img {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+body .outside-box .banner-logo .logo-text .logo-p-text {
+  margin-top: 0.5em;
+}
+
+body .outside-box .banner-logo .logo-text .logo-p-text p {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+body .outside-box .banner {
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  height: 968px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+body .outside-box .banner .banner-img {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: banner-animation 20s 0s infinite;
+          animation: banner-animation 20s 0s infinite;
+}
+
+body .outside-box .banner :nth-child(1) {
+  background-image: url("../image/img/img-L/1.jpg");
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+body .outside-box .banner :nth-child(2) {
+  background-image: url("https://images.unsplash.com/photo-1528738064262-9f834cbdfda1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+body .outside-box .banner :nth-child(3) {
+  background-image: url("https://images.unsplash.com/photo-1533622447723-ddb6468ad2df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=976&q=80");
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+body .outside-box .banner :nth-child(4) {
+  background-image: url("../image/img/img-L/4.jpg");
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+body .outside-box .banner :nth-child(5) {
+  background-image: url("https://images.unsplash.com/photo-1596560314766-08c0c6890024?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+
+body .outside-box .features {
+  height: 627px;
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 65%);
+          clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 65%);
+  top: -146px;
+}
+
+body .outside-box .menu {
+  height: 2246px;
+}
+
+body .outside-box .environment {
+  height: 1437px;
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+  background-color: #eee;
+}
+
+body .outside-box .shop {
+  height: 1165px;
+}
+
+body .outside-box .news {
+  height: 1812px;
+  -webkit-clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 90%);
+          clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 90%);
+  background-color: #eee;
+}
+
+body .outside-box .contact {
+  height: 1296px;
+}
+/*# sourceMappingURL=style_1.css.map */
