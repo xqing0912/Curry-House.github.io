@@ -12,6 +12,8 @@
     <!-- hover css -->
     <link rel="stylesheet" href="./css/hover-min.css">
     <link rel="stylesheet" href="./style/style_1.css">
+    <!-- AOS.css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Curry House</title>
     <style>
 
@@ -83,12 +85,23 @@
                 </div>
                 <div class="logo-p-text">
                     <p class="logo-title">野岛家</p>
-                    <p>カレー屋</p>
+                    <p class="logo-txt">カレー屋</p>
                 </div>
             </div>
         </div>
         <div id="features" class="features">
-            
+            <div class="features-shell"></div>
+            <div class="features-box">
+                <div class="features-content container">
+                    <h3 class="features-title-
+                   first text-white">野島家特色</h3>
+                    <h5 class="features-title-
+                   second text-white">客製化咖哩飯，18種配料自由搭配，平價好滋味！</h5>
+                    <p class="features-title-
+                   third text-white">使用洋蔥、蘋果、紅蘿蔔、雞高湯、特製咖哩香料，調配出帶有濃稠度與食材甜味的咖哩。
+                    </p>
+                </div>
+            </div>
         </div>
         <div id="menu" class="menu"></div>
         <div id="environment" class="environment"></div>
@@ -108,7 +121,14 @@
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
     </script>
     <script src="./fastClick/fastclick.js">
-
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 600,
+            once: true,
+            delay: 3
+        });
     </script>
     <script src="./js/main.js"></script>
 </body>
